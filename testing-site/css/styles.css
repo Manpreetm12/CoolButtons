@@ -1,0 +1,117 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 2.5rem;
+}
+
+.spacing {
+    margin: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bn47 {
+    position: relative;
+    padding: 1rem 2rem 0.5rem 2.5rem;
+    color: #000000;
+    border: 3px solid #776e62;
+    -webkit-transition: padding 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
+  }
+  
+  .bn47:before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    border-right: 3px solid #ffffff;
+    border-bottom: 3px solid #ffffff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .bn47:hover {
+    padding: 0.75rem 2.25rem;
+  }
+  
+  .bn47:hover:before {
+    top: 0;
+    left: 0;
+  }
+
+  .bn54 {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 45px;
+    width: 130px;
+    opacity: 1;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.6);
+  }
+  
+  .bn54 .bn54span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  
+  .bn54:hover {
+    animation: bn54rotate 0.7s ease-in-out both;
+  }
+  
+  .bn54:hover .bn54span {
+    animation: bn54storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes bn54rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes bn54storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
